@@ -9,6 +9,7 @@ public class Browser {
 	
 	public static WebDriver launch() {
 		String browser = System.getProperty("browser");
+		
 		if(browser.equals("firefox")) {
 			return new FirefoxDriver();
 		} else if(browser.equals("chrome")) {
